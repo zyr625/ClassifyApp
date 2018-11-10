@@ -1,0 +1,16 @@
+配置说明：
+
+1、greendao需要在项目的build下添加以下依赖
+
+ repositories {
+        mavenCentral() // add repository
+    }
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2' // add plugin
+    }
+
+  util包下CacheUtils为缓存操作类
+
+  使用之前记得初始化 CacheUtils.getCacheUtils().init(this);
+
+  或者直接让你的module里的Application直接继承库里的BaseApplication
